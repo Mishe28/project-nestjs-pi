@@ -1,6 +1,10 @@
-import { Entity } from "typeorm"
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm"
 
 @Entity()
-export class institute_type {
+export class InstituteType {
+    @PrimaryGeneratedColumn()
+    id: number
 
+    @Column()
+    name: string
 }

@@ -1,6 +1,13 @@
-import { Entity } from "typeorm"
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm"
 
 @Entity()
-export class zone {
+export class Zone {
+    @PrimaryGeneratedColumn()
+    id: number
 
+    @Column()
+    name: string
+
+    @Column()
+    location: string
 }
